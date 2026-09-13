@@ -1,4 +1,4 @@
-/*==================================================
+
   GLOBAL RESET
 ==================================================*/
 
@@ -1067,7 +1067,7 @@ SECTION TITLE
 }
 
 /*==================================================
-ABOUT APPA
+ABOUT NAINA
 ==================================================*/
 
 #about-appa{
@@ -2267,3 +2267,203 @@ padding:35px 20px;
 /*==================================================
 END OF FILE
 ==================================================*/
+/* ==================================================
+   NAINA GRATITUDE SECTION
+================================================== */
+.gratitude-section{
+    padding:110px 8%;
+}
+.gratitude-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:28px;
+}
+.gratitude-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:24px;
+    padding:42px 30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+    transition:.4s;
+}
+.gratitude-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(255,75,145,.3);
+}
+.gratitude-icon{
+    display:block;
+    font-size:48px;
+    margin-bottom:18px;
+}
+.gratitude-card h3{
+    font-family:"Noto Sans Tamil",sans-serif;
+    font-size:26px;
+    color:#ffcc70;
+    margin-bottom:15px;
+}
+.gratitude-card p{
+    color:#ddd;
+    line-height:1.9;
+    font-size:17px;
+}
+.heartfelt-message{
+    max-width:950px;
+    margin:55px auto 0;
+    padding:45px;
+    text-align:center;
+    border-radius:25px;
+    background:linear-gradient(135deg,rgba(255,75,145,.14),rgba(255,204,112,.10));
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+}
+.heartfelt-message h3{
+    font-size:32px;
+    color:#ffcc70;
+    margin-bottom:18px;
+}
+.heartfelt-message p{
+    color:#eee;
+    font-size:19px;
+    line-height:1.9;
+}
+.heartfelt-message strong{color:#fff;}
+@media(max-width:768px){
+    .gratitude-section{padding:80px 6%;}
+    .heartfelt-message{padding:32px 22px;}
+    .heartfelt-message h3{font-size:25px;}
+}
+
+
+/* =========================================================
+   Naina Expanded Content
+   ========================================================= */
+
+.naina-extra-content {
+    padding: 90px 6%;
+    position: relative;
+}
+
+.long-message-card,
+.promise-card,
+.birthday-letter,
+.wish-list-card {
+    max-width: 1050px;
+    margin: 0 auto 35px;
+    padding: 38px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    line-height: 1.95;
+}
+
+.long-message-card p,
+.promise-card p,
+.birthday-letter p {
+    margin: 0 0 18px;
+}
+
+.long-message-card p:last-child,
+.promise-card p:last-child,
+.birthday-letter p:last-child {
+    margin-bottom: 0;
+}
+
+.naina-content-grid {
+    max-width: 1100px;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.naina-content-card {
+    padding: 28px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.14);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.naina-content-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+
+.naina-content-card h3 {
+    margin: 12px 0;
+}
+
+.naina-content-card p {
+    line-height: 1.8;
+    margin: 0;
+}
+
+.naina-number {
+    font-size: 28px;
+    font-weight: 700;
+    opacity: .65;
+}
+
+.promise-card {
+    text-align: center;
+}
+
+.promise-card h3,
+.birthday-letter h3,
+.wish-list-card h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.birthday-letter {
+    max-width: 900px;
+}
+
+.letter-ending {
+    font-weight: 700;
+    text-align: right;
+}
+
+.wish-list-card {
+    max-width: 900px;
+}
+
+.wish-list-card ul {
+    margin: 0;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+@media (max-width: 900px) {
+    .naina-content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .naina-extra-content {
+        padding: 60px 5%;
+    }
+
+    .long-message-card,
+    .promise-card,
+    .birthday-letter,
+    .wish-list-card,
+    .naina-content-card {
+        padding: 24px;
+    }
+
+    .naina-content-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .letter-ending {
+        text-align: left;
+    }
+}
